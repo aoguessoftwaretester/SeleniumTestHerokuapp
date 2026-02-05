@@ -76,7 +76,7 @@ public class testmainpage {
         ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
     }
 
-    @Test(priority = 3)
+    @Test(priority = 4)
     public void verifyBasicAuthLink() {
         driver.findElement(By.linkText("Basic Auth")).click();
 
