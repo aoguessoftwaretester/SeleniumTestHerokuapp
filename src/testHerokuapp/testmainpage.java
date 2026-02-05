@@ -74,9 +74,28 @@ public class testmainpage {
 
         // Take screenshot after navigating back
         ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
-
     }
 
+    @Test(priority = 3)
+    public void verifyBasicAuthLink() {
+        driver.findElement(By.linkText("Basic Auth")).click();
+
+        // Take screenshot after clicking link
+        ScreenshotUtil.takeScreenshot(driver, "BasicAuth_Clicked");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        }
+        
+		// Go back to homepage
+	    driver.get("https://the-internet.herokuapp.com/");
+
+        // Take screenshot after navigating back
+        ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
+    }
+    
     @AfterClass
     public void tearDown() {
         driver.quit();   // browser closes ONLY at the end
