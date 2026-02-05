@@ -56,6 +56,26 @@ public class testmainpage {
 
         System.out.println("✅ A/B Testing link works and returned to home page");
     }
+    
+    @Test(priority = 3)
+    public void verifyAddRemoveElementsLink() {
+        driver.findElement(By.linkText("Add/Remove Elements")).click();
+
+        // Take screenshot after clicking link
+        ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_Clicked");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        }
+        
+        driver.navigate().back();
+
+        // Take screenshot after navigating back
+        ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
+
+    }
 
     @AfterClass
     public void tearDown() {
