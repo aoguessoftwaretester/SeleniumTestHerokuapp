@@ -88,7 +88,7 @@ public class testmainpage {
         } catch (InterruptedException ie) {
             ie.printStackTrace();
         }
-        
+       
 		// Go back to homepage
 	    driver.get("https://the-internet.herokuapp.com/");
 
