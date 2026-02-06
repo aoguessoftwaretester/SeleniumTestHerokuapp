@@ -116,6 +116,26 @@ public class testmainpage {
         ScreenshotUtil.takeScreenshot(driver, "BrokenImages_BackToHome");
     }
     
+    @Test(priority = 6)
+    public void verifyChallengingDOMLink() {
+        driver.findElement(By.linkText("Challenging DOM")).click();
+
+        // Take screenshot after clicking link
+        ScreenshotUtil.takeScreenshot(driver, "ChallengingDOM_Clicked");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        }
+       
+		// Go back to homepage
+        driver.navigate().back();
+
+        // Take screenshot after navigating back
+        ScreenshotUtil.takeScreenshot(driver, "ChallengingDOM_BackToHome");
+    }
+    
     @AfterClass
     public void tearDown() {
         driver.quit();   // browser closes ONLY at the end
