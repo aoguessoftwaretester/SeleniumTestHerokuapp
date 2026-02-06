@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Gel\AppData\Local\Temp\testng-eclipse--1661396521\testng-customsuite.xml</span>
+                    <span>C:\Users\Gel\AppData\Local\Temp\testng-eclipse--376289140\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testHerokuapp.testmainpage" class="method navigator-link" hash-for-method="verifyABTestingLink">verifyABTestingLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testHerokuapp.testmainpage" class="method navigator-link" hash-for-method="verifyAddRemoveElementsLink">verifyAddRemoveElementsLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testHerokuapp.testmainpage" class="method navigator-link" hash-for-method="verifyBasicAuthLink">verifyBasicAuthLink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +148,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="verifyAddRemoveElementsLink">
+                  </a> <!-- verifyAddRemoveElementsLink -->
+                  <span class="method-name">verifyAddRemoveElementsLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBasicAuthLink">
+                  </a> <!-- verifyBasicAuthLink -->
+                  <span class="method-name">verifyBasicAuthLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyHomePageTitle">
                   </a> <!-- verifyHomePageTitle -->
                   <span class="method-name">verifyHomePageTitle</span>
@@ -148,7 +172,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Gel\AppData\Local\Temp\testng-eclipse--1661396521\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Gel\AppData\Local\Temp\testng-eclipse--376289140\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -197,20 +221,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyABTestingLink')
+data.setCell(0, 1, 'verifyBasicAuthLink')
 data.setCell(0, 2, 'testHerokuapp.testmainpage')
-data.setCell(0, 3, 1468);
+data.setCell(0, 3, 1724);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyHomePageTitle')
+data.setCell(1, 1, 'verifyAddRemoveElementsLink')
 data.setCell(1, 2, 'testHerokuapp.testmainpage')
-data.setCell(1, 3, 20);
+data.setCell(1, 3, 1524);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyABTestingLink')
+data.setCell(2, 2, 'testHerokuapp.testmainpage')
+data.setCell(2, 3, 1477);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyHomePageTitle')
+data.setCell(3, 2, 'testHerokuapp.testmainpage')
+data.setCell(3, 3, 39);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -243,15 +275,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitle</span>
-                <span class="method-start">2407 ms</span>
+                <span class="method-start">2104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyABTestingLink</span>
-                <span class="method-start">2647 ms</span>
+                <span class="method-start">2486 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyAddRemoveElementsLink</span>
+                <span class="method-start">4126 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBasicAuthLink</span>
+                <span class="method-start">5801 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4237 ms</span>
+                <span class="method-start">7658 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
