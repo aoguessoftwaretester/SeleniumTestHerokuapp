@@ -75,7 +75,7 @@ public class testmainpage {
         // Take screenshot after navigating back
         ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
     }
-
+    
     @Test(priority = 4)
     public void verifyBasicAuthLink() {
         driver.findElement(By.linkText("Basic Auth")).click();
@@ -94,6 +94,26 @@ public class testmainpage {
 
         // Take screenshot after navigating back
         ScreenshotUtil.takeScreenshot(driver, "AddRemoveElements_BackToHome");
+    }
+    
+    @Test(priority = 5)
+    public void verifyBrokenImagesLink() {
+        driver.findElement(By.linkText("Broken Images")).click();
+
+        // Take screenshot after clicking link
+        ScreenshotUtil.takeScreenshot(driver, "BrokenImages_Clicked");
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException ie) {
+            ie.printStackTrace();
+        }
+       
+		// Go back to homepage
+        driver.navigate().back();
+
+        // Take screenshot after navigating back
+        ScreenshotUtil.takeScreenshot(driver, "BrokenImages_BackToHome");
     }
     
     @AfterClass
