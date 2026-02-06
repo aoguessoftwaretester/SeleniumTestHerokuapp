@@ -1,7 +1,7 @@
 name: Selenium TestNG (Maven CI)
 
 on:
-  pull_request:
+  push_request:
     branches: [ "SeleniumTestBranch" ]
 
 jobs:
